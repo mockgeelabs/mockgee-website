@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mockgee - API Mocking Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        blue: {
+                            50: '#e6f8f4',
+                            100: '#ccf1e9',
+                            200: '#99e3d3',
+                            300: '#66d6bd',
+                            400: '#33c8a7',
+                            500: '#06ba91',
+                            600: '#059d77',
+                            700: '#047b5d',
+                            800: '#035e49',
+                            900: '#024033',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white">
+    <!-- Logo (Replacing Navigation) -->
+    <div class="fixed top-0 left-0 right-0 z-10 bg-white shadow-sm p-4">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <span class="text-blue-600 text-2xl font-bold">Mockgee</span>
+            <a href="https://docs.mockgee.com" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium">Documentation →</a>
+        </div>
+    </div>
+
+    <!-- Enhanced Hero Section -->
+    <div class="pt-28 pb-20 bg-gradient-to-b from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-12">
+                <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
+                    <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                        <span class="block">Effortlessly Mock</span>
+                        <span class="block text-blue-600">RESTful & SOAP APIs</span>
+                    </h1>
+                    <p class="mt-6 text-xl text-gray-500 leading-relaxed">
+                        Streamline your development process with fast, reliable API mocking. 
+                        Build better applications faster with our intuitive and powerful mocking platform.
+                    </p>
+                    <div class="mt-10 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left">
+                        <button class="bg-blue-600 text-white px-8 py-4 rounded-md text-lg font-medium hover:bg-blue-700 transition shadow-lg">
+                            Get Started for Free
+                        </button>
+                    </div>
+                    
+                    <!-- Added key metrics -->
+                    <div class="mt-12 grid grid-cols-3 gap-5 text-center lg:text-left">
+                        <div>
+                            <p class="text-3xl font-bold text-blue-600">99.9%</p>
+                            <p class="text-gray-500">Uptime</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-bold text-blue-600">100+</p>
+                            <p class="text-gray-500">Enterprise Devs</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-bold text-blue-600">500K+</p>
+                            <p class="text-gray-500">API Calls/Year</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
+                    <div class="relative mx-auto w-full rounded-lg shadow-2xl lg:max-w-md overflow-hidden transform hover:scale-105 transition duration-500">
+                        <div class="relative block w-full bg-white rounded-lg overflow-hidden">
+                            <img src="dashboard_preview.svg" alt="Dashboard preview" class="w-full">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Simplified Features Section -->
+    <div class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    Powerful Features
+                </h2>
+                <p class="mt-4 text-xl text-gray-500 max-w-3xl mx-auto">
+                    Everything you need to create realistic API mocks in minutes.
+                </p>
+            </div>
+
+            <div class="mt-20">
+                <div class="grid grid-cols-1 gap-12 md:grid-cols-3">
+                    <!-- Feature 1 -->
+                    <div class="text-center">
+                        <div class="flex items-center justify-center mx-auto h-20 w-20 rounded-full bg-blue-100 mb-6">
+                            <svg class="h-10 w-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Full Standard Support</h3>
+                        <p class="text-gray-500">
+                            Generate API mocks instantly from OpenAPI, Swagger, WSDL, Postman collections, or native formats with a single click.
+                        </p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="text-center">
+                        <div class="flex items-center justify-center mx-auto h-20 w-20 rounded-full bg-blue-100 mb-6">
+                            <svg class="h-10 w-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Real API Simulation</h3>
+                        <p class="text-gray-500">
+                            Experience genuine API functionalities that precisely mirror your production environment behavior.
+                        </p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="text-center">
+                        <div class="flex items-center justify-center mx-auto h-20 w-20 rounded-full bg-blue-100 mb-6">
+                            <svg class="h-10 w-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Proxy Mode</h3>
+                        <p class="text-gray-500">
+                            Configure endpoints in proxy mode for parallel mock & real target responses, reducing dependencies.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <div class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Simple Pricing</h2>
+                <p class="mt-4 text-xl text-gray-500">Choose the plan that's right for your team</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+                <!-- Free Tier -->
+                <div class="bg-white rounded-2xl shadow-xl p-10 border-2 border-transparent hover:border-blue-500 transition duration-300">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-2xl font-bold text-gray-900">Free</h3>
+                        <div class="flex items-baseline">
+                            <span class="text-4xl font-extrabold text-gray-900">$0</span>
+                            <span class="ml-1 text-xl text-gray-500">/Forever</span>
+                        </div>
+                    </div>
+                    <ul class="mt-8 space-y-4">
+                        <li class="flex items-center">
+                            <svg class="h-5 w-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="ml-3 text-gray-700">100 API endpoints</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-5 w-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="ml-3 text-gray-700">5 users</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-5 w-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="ml-3 text-gray-700">Unlimited mock invocations</span>
+                        </li>
+                    </ul>
+                    <div class="mt-10">
+                        <button class="w-full bg-blue-600 text-white py-3 px-6 rounded-md hover:bg-blue-700 transition">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Enterprise Tier -->
+                <div class="bg-white rounded-2xl shadow-xl p-10 border-2 border-transparent hover:border-blue-500 transition duration-300">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-2xl font-bold text-gray-900">Enterprise</h3>
+                        <div class="flex items-baseline">
+                            <span class="text-xl text-gray-500">Custom Pricing</span>
+                        </div>
+                    </div>
+                    <ul class="mt-8 space-y-4">
+                        <li class="flex items-center">
+                            <svg class="h-5 w-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="ml-3 text-gray-700">Unlimited API endpoints</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-5 w-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="ml-3 text-gray-700">Unlimited users</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-5 w-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="ml-3 text-gray-700">Priority support</span>
+                        </li>
+                    </ul>
+                    <div class="mt-10">
+                        <button class="w-full bg-gray-800 text-white py-3 px-6 rounded-md hover:bg-gray-900 transition">
+                            Contact Us
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trusted By Section -->
+    <div class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold text-gray-900">Trusted by STC</h2>
+                <p class="mt-4 text-xl text-gray-500">Powering enterprise-grade API development</p>
+            </div>
+
+            <div class="flex justify-center">
+                <img src="stc.png" alt="STC" class="h-20 object-contain mx-auto"/>
+            </div>
+
+            <!-- Single testimonial -->
+            <div class="mt-16 max-w-3xl mx-auto bg-blue-50 p-8 rounded-2xl text-center">
+                <p class="text-gray-700 text-xl italic">
+                    "STC effectively utilizes Mockgee for API sandboxing and bottleneck resolution. By leveraging Mockgee's proxy feature for parallel API mocking and testing, it significantly improves our API time-to-market."
+                </p>
+                <p class="mt-4 font-medium text-gray-900">Director @ STC - API and Integrations</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Simple Footer with Contact -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <span class="text-xl font-bold text-white">Mockgee</span>
+                    <p class="mt-2 text-gray-300">API Mocking Platform for modern development teams.</p>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-medium text-gray-100">Contact</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li class="text-gray-300">Email: sales@mockgee.com</li>
+                        <li class="text-gray-300">Phone: +966 53890-3547</li>
+                    </ul>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h3 class="text-lg font-medium text-gray-100">Links</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="https://docs.mockgee.com" class="text-gray-300 hover:text-white">Documentation</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 border-t border-gray-700 pt-8 flex justify-between items-center">
+                <p class="text-gray-400">&copy; 2024 Mockgee. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="https://www.linkedin.com/company/mockgee" class="text-gray-400 hover:text-white">
+                        <span class="sr-only">LinkedIn</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
